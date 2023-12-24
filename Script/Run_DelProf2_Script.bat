@@ -1,7 +1,7 @@
 @echo off
 
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy ByPass -File "%~dp0Update-NtUserDat.ps1"
+START /WAIT C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy ByPass -File "%~dp0Update-NtUserDat.ps1" | ECHO > nul
 
-"%~dp0DelProf2.exe" /d:90
+"%~dp0DelProf2.exe" /d:90 /q
 
 EXIT
