@@ -11,7 +11,7 @@ The actual Fix is implemented by the “**Update-NtUserDat.ps1**” Script, whic
 
 # <ins>Script:</ins>
 
-- **DelProf2.exe**
+- **DelProf2.exe**<br>
 This is the same “**DelProf2.exe**” version that can be downloaded from the official website.
 
 - **Update-NtUserDat.ps1**
