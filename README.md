@@ -7,7 +7,7 @@ https://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool/
 **Microsoft Tech Community - Issue with date modified for NTUSER.DAT:**
 https://techcommunity.microsoft.com/t5/windows-deployment/issue-with-date-modified-for-ntuser-dat/m-p/102438
 
-#**Script:**#
+# <ins>Script:</ins>
 
 - **DelProf2.exe**
 This is the same “DelProf2.exe” version that can be downloaded from the official website.
