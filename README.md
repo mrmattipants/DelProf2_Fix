@@ -74,3 +74,4 @@ You can now Close the Group Policy Configuration and Review your Group Policy, f
 
 <img src="https://i.imgur.com/w3vfsr8.png">
 
+From here, you'll want to Test your new Group Policy, prior to Linking to a Production OU, etc.
