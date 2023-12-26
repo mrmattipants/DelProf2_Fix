@@ -74,3 +74,4 @@ From here, you'll want to Test your new Group Policy, prior to Linking to a Prod
 
 - **<a href="https://helgeklein.com/">Helge Klein</a>**
 - **<a href="https://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool/#comment-243474">George</a>**
+- **<a href="https://techcommunity.microsoft.com/t5/windows-deployment/issue-with-date-modified-for-ntuser-dat/m-p/163685/highlight/true#M309">Joe Friedel</a>**
