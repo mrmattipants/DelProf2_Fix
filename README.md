@@ -14,7 +14,7 @@ The actual Fix is implemented by the “**Update-NtUserDat.ps1**” Script, whic
 # <ins>Script:</ins>
 
 - **DelProf2.exe**<br>
-  - This is the same “**DelProf2.exe**” Utility (**DelProf2 Version 1.6.0**) that can be Downloaded from the Official "<a href="">Helge Klein</a>" Website.
+  - This is the same “**DelProf2.exe**” Utility (**DelProf2 Version 1.6.0**) that can be Downloaded from the Official "<a href="https://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool/">Helge Klein</a>" Website.
 
 - **Update-NtUserDat.ps1**<br>
   - The “**Update-NtUserDat.ps1**” contains the actual fix, as it Corrects the Date/Time on the User’s “**NTUSER.DAT**” File (via the “**LastWriteTime**” Attribute), by Copying the Date/Time from their “**USRCLASS.DAT**” File.
@@ -28,7 +28,7 @@ The actual Fix is implemented by the “**Update-NtUserDat.ps1**” Script, whic
 # <ins>Testing:</ins>
 
 - **DelProf2.exe**<br>
-  - This is the same “**DelProf2.exe**” Utility (**DelProf2 Version 1.6.0**) that can be Downloaded from the official website.
+  - This is the same “**DelProf2.exe**” Utility (**DelProf2 Version 1.6.0**) that can be Downloaded from the Official "<a href="https://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool/">Helge Klein</a>" Website.
 
 - **Set-NewDateOnUsrClassDat.ps1**<br>
   - The “**Set-NewDateOnUsrClassDat.ps1**” can be used to Change the Date/Time on the “**USRCLASS.DAT**” File, belonging to a specific User Profile. The Script will Prompt for the “**Username**” and “**Date & Time**” (or “**Number of Days**” to Subtract from the existing Date/Time).
