@@ -48,8 +48,29 @@ The actual Fix is implemented by the “**Update-NtUserDat.ps1**” Script, whic
  
 # <ins>Deployment - Group Policy:</ins>
 
+Create your GPO and Add a "**Startup Script**" Policy, in the following Location.
+**Computer Configuration > Policies > Windows Settings > Scripts > Startup**
+
 <img src="https://i.imgur.com/mUmHEHj.png">
+
+Under the "**Startup Properties**", Click on the "**Show Files**" Button.
 
 <img src="https://i.imgur.com/f7b2Z4r.png">
 
+Copy the following Four Script Files from DelProf2_Fix "**Scripts**" Folder to your "**Startup Script**" Policy Folder.
+
+- **DelProf2.exe**
+- **Update-NtUserDat.ps1**
+- **Run_DelProf2_Script.bat**
+- **Run_DelProf2_Script.vbs**
+
 <img src="https://i.imgur.com/EkyagyP.png">
+
+Return to the "**Startup Properties**" and Add the "**Run_DelProf2_Script.vbs**" Script to the Listbox, under the "**Scripts**" Tab.
+
+<img src="https://i.imgur.com/HLxDBA4.png">
+
+You can now Close the Group Policy Configuration and Review your Group Policy, from the "**Settings**" Tab, of the Group Policy Management Preview Window.
+
+<img src="https://i.imgur.com/w3vfsr8.png">
+
