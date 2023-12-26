@@ -48,7 +48,7 @@ The actual Fix is implemented by the “**Update-NtUserDat.ps1**” Script, whic
  
 # <ins>Deployment - Group Policy:</ins>
 
-Create your GPO and Add a "**Startup Script**" Policy, in the following Location.
+Create your GPO and Add a "**Startup Script**" Policy, in the following Location.<br>
 **Computer Configuration > Policies > Windows Settings > Scripts > Startup**
 
 <img src="https://i.imgur.com/mUmHEHj.png">
