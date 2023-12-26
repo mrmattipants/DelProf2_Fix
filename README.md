@@ -1,14 +1,6 @@
 # **DelProf2_Fix**<br>
 A Solution to the ongoing Issues, affecting the DelProf2 Utility by Helge Klein.
 
-**Helge Klein - DelProf2 User Profile Deletion Tool:**<br>
-https://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool/
-
-This Fix is based on the Solutions provided in the Comments Section of the Official DelProf2 Site as well as in the Comments of the following Microsoft Tech Community Discussion Board Posting (the majority of which, can be found in the Comments Located on the 2nd and 3rd Pages).
-
-**Microsoft Tech Community - Issue with date modified for NTUSER.DAT:**<br>
-https://techcommunity.microsoft.com/t5/windows-deployment/issue-with-date-modified-for-ntuser-dat/m-p/102438
-
 The actual Fix is implemented by the “**Update-NtUserDat.ps1**” Script, which loops through All of the User Profiles on the Computer, on which it is Running and Corrects the Date/Time on the associated “**NTUSER.DAT**” Files (via the “**LastWriteTime**” Attribute), by Copying the Date/Time from their “**USRCLASS.DAT**” File (which is Located in the User’s “**C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows**” Folder).
 
 # <ins>Script:</ins>
@@ -77,3 +69,8 @@ You can now Close the Group Policy Configuration and Review your Group Policy, f
 <img src="https://i.imgur.com/w3vfsr8.png">
 
 From here, you'll want to Test your new Group Policy, prior to Linking to a Production OU, etc.
+
+# <ins>Contributors:</ins>
+
+- **<a href="https://helgeklein.com/">Helge Klein</a>**
+- **<a href="https://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool/#comment-243474">George</a>**
