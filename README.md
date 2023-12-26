@@ -45,3 +45,11 @@ The actual Fix is implemented by the “**Update-NtUserDat.ps1**” Script, whic
 
 - **Test_DelProf2_Script.bat**<br>
   - The “**Test_DelProf2_Script.bat**” Script Runs the “**Update-NtUserDat.ps1**” (containing the Fix), before Running the “**DelProf2.exe**” Tool, in “**List Only, Do Not Delete**” aka “**What-If**“ Mode (Listing Old/Outdated Profiles without Deleting them).
+ 
+# <ins>Deployment - Group Policy:</ins>
+
+<img src="https://i.imgur.com/mUmHEHj.png">
+
+<img src="https://i.imgur.com/f7b2Z4r.png">
+
+<img src="https://i.imgur.com/EkyagyP.png">
