@@ -4,6 +4,8 @@ A Solution to the ongoing Issues, affecting the DelProf2 Utility by Helge Klein.
 **Helge Klein - DelProf2 User Profile Deletion Tool:**<br>
 https://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool/
 
+This Fix is based on the Solutions provided in the following Microsoft Discussion Board Posting (the majority of which, can be found in the Comments, Located on the 2nd and 3rd Pages).
+
 **Microsoft Tech Community - Issue with date modified for NTUSER.DAT:**<br>
 https://techcommunity.microsoft.com/t5/windows-deployment/issue-with-date-modified-for-ntuser-dat/m-p/102438
 
