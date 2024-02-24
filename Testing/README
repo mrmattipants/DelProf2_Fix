@@ -1,20 +1,42 @@
-- DelProf2.exe
+- <b>DelProf2.exe</b><br>
 This is the same “DelProf2.exe” version that can be downloaded from the official website.
 
-- Set-NewDateOnUsrClassDat.ps1
+- <b>Set-NewDateOnUsrClassDat.ps1</b><br>
 The “Set-NewDateOnUsrClassDat.ps1” can be used to Change the Date/Time on the “USRCLASS.DAT” File, belonging to a specific User Profile. The Script will Prompt for the “Username” and “Date & Time” (or “Number of Days” to Subtract from the existing Date/Time).
 
-- Set-NewDateOnUsrClassDat.bat
+- <b>Set-NewDateOnUsrClassDat.bat</b><br>
 The “Set-NewDateOnUsrClassDat.bat” Script simply Runs the “Set-NewDateOnUsrClassDat.ps1” Script, with the necessary Parameters & Privileges, etc.
 
-- Set-TodaysDateOnNtUserDat.ps1
+- <b>Set-TodaysDateOnNtUserDat.ps1</b><br>
 The "Set-TodaysDateOnNtUserDat.ps1" Script can be used to Set the Date/Time on a User's "NTUSER.DAT" File, to the Current Date/Time.
 
-- Set-TodaysDateOnNtUserDat.bat
+- <b>Set-TodaysDateOnNtUserDat.bat</b><br>
 The “Set-TodaysDateOnNtUserDat.ps1” Script simply Runs the “Set-TodaysDateOnNtUserDat.ps1” Script, with the necessary Parameters & Privileges, etc.
 
-- Update-NtUserDat.ps1
+- <b>Update-NtUserDat.ps1</b><br>
 This is the same “Update-NtUserDat.ps1” Script, that is in the “Script” Directory, which contains the actual “DelProf2” Fix.
 
-- Test_DelProf2_Script.bat
+- <b>Test_DelProf2_Script.bat</b><br>
 The “Test_DelProf2_Script.bat” Script Runs the “Update-NtUserDat.ps1” (containing the Fix), before Running the “DelProf2.exe” Tool, in “List Only, Do Not Delete” aka “What-If” Mode (Listing Old/Outdated Profiles without Deleting them).
+
+**<u>Testing Instrutions</u>**:
+
+<b>1.)</b> Choose the Number of Days that you want to use as the Threshold (the Default is 90 Days).
+If you have NOT chosen the Default Threshold (90 Days), Open the "Test_DelProf2_Script.bat" File into your Text Editor of choise and Change the Number 90, on Line #5 ("%~dp0DelProf2.exe" /d:90 /l), to your chosen Number.
+
+<b>2.)</b> Choose a Computer for Testing and Sign into it, using an Administrative Profile.
+
+<b>3.)</b> Choose a User Profile on the chosen Computer for Testing (User Profiles exist under the "C:\Users" Folder).
+
+<b>4.)</b> Check the "UsrClass.dat" File, associated with your Test Profile (under "C:\Users\%USERPROFILE%\AppData\Local\Microsoft\Windows\"), to determine if the "LastWriteDate" Attribute (Labeled as "Last Modified" in Windows Explorer) contains a Date/Time that is older than the chosen threshold (Number of Days).
+If necessary, you can utilize the "Set-NewDateOnUsrClassDat" Scripts to Manually Change the "LastWriteTime" Attribute on the "UsrClass.dat" File, associated with the Test Profile.
+
+<b>5.)</b> Check the "NTUser.dat" File, assoicated with your Test Profile (under "C:\Users\%USERNAME%\"), to ensure that the "LastWriteTime" Attribute (Labeled as "Last Modified" in Windows Explorer) contains a Date/Time that is newer than the chosen threshold (Number of Days).
+If necessary, you can utilize the "Set-TodaysDateOnNtUserDat" Scripts to Manually Set the "LastWriteTime" Attribute on the "NTUser.dat" File, to the current Date/Time.
+
+<b>6.)</b> Run the "Update-NtUserDat.ps1" Script and Confirm that the "LastWriteTime" Attribute ("Last Modified" in Explorer) on the "NTUser.dat" File has Changed.
+The "LastWriteTime" Attribute on the "NTUser.dat" File should now match the "LastWriteTime" Attribute on the "UsrClass.dat" File, exactly.
+If the "Last Modified" Date hasn't changed, in the Windows Explorer Window, you may have to Right-Click on the Background of the Windows Explorer Window and Select the "Refresh" Option, from the Context Menu.
+
+<b>7.)</b> Run the "Test_DelProf2_Script" (as Administrator). No Profiles will actually be Deleted, since this is simply a Test.
+If the previous Steps were performed correctly, your Test User should be Listed at the bottom, under the Text, that reads "The following user profiles match the deletion criteria".
